@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe E:\Program Files\yarn\bin\yarn.js add webapck webapck-cli
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\Java\jdk1.8.0_151\bin;E:\Program Files\TortoiseSVN\bin;E:\Program Files\bin;E:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;E:\Program Files (x86)\Git\bin;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\WINDOWS\short;C:\WINDOWS\System32\OpenSSH\;E:\Program Files\yarn\bin\;E:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;E:\Program Files\Microsoft VS Code\bin;E:\nvm\nvm\nvm;C:\Program Files\nodejs;C:\Users\tsa\AppData\Local\Microsoft\WindowsApps;C:\Users\tsa\AppData\Local\Yarn\bin;E:\Program Files\Microsoft VS Code\bin;C:\Program Files\Docker Toolbox;C:\Users\tsa\AppData\Roaming\npm;E:\Program Files\MySQL\MySQL Server 5.6\bin;E:\nvm\nvm\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: http://nexus.saas.hand-china.com/content/repositories/hone-ui/webapck: Package 'webapck' not found
+      at Request.params.callback [as _callback] (E:\Program Files\yarn\lib\cli.js:65656:18)
+      at Request.self.callback (E:\Program Files\yarn\lib\cli.js:134675:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (E:\Program Files\yarn\lib\cli.js:135658:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (E:\Program Files\yarn\lib\cli.js:135578:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "webapck-builder",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+      "lib": "lib"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build":"webapck --config ./lib/webapck.base.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
