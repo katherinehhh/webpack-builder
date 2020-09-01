@@ -3,7 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import largeNumber from 'large-number';
-import logo from './images/logo.png';
+// import logo from './images/logo.png';
 import './search.less';
 
 class Search extends React.Component {
@@ -16,13 +16,6 @@ class Search extends React.Component {
         };
     }
 
-    loadComponent() {
-        import('./text.js').then((Text) => {
-            this.setState({
-                Text: Text.default
-            });
-        });
-    }
 
     render() {
         const { Text } = this.state;
@@ -32,7 +25,7 @@ class Search extends React.Component {
                 Text ? <Text /> : null
             }
             { addResult }
-            搜索文字的内容<img src={ logo } onClick={ this.loadComponent.bind(this) } />
+            搜索文字的内容
         </div>;
     }
 }

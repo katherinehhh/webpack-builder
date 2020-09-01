@@ -60,6 +60,7 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
+    "glob-all": "^3.2.1",
     "large-number": "^1.0.1",
     "lib-flexible": "^0.3.2"
   }

@@ -1,0 +1,7 @@
+language: nodejs
+install:
+       -- npm install
+       -- cd ./test/smoke/template
+       -- npm install
+        --cd ../../
+
